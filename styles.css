@@ -55,6 +55,12 @@ body {
     padding: 20px;
 }
 
+/* Pengaturan */
+.Pengaturan {
+    flex: 1;
+    padding: 20px;
+}
+
 /* Menu Bawah */
 .menu-bawah {
     text-align: center;
@@ -84,7 +90,7 @@ body.dark-mode {
 
 body.dark-mode .menu-atas,
 body.dark-mode .isi-konten,
-body.dark-mode .menu-bawah {
+body.dark-mode .menu-bawah,.Pengaturan {
     background-color: black;
     color: white;
     border-color: white;
