@@ -6,14 +6,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #fff; /* Background putih */
+    color: #000; /* Warna font hitam */
 }
 
 /* Gaya untuk header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff; /* Background container putih */
+    color: #000; /* Warna font hitam */
     padding: 1rem;
     border-radius: 10px 10px 0 0;
+    border: 1px solid #000; /* Border hitam */
 }
 
 header nav ul {
@@ -29,7 +32,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #000; /* Warna font hitam */
     text-decoration: none;
 }
 
@@ -43,19 +46,22 @@ main {
 }
 
 main section {
-    background-color: #f4f4f4;
+    background-color: #fff; /* Background container putih */
+    color: #000; /* Warna font hitam */
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
     width: 80%;
+    border: 1px solid #000; /* Border hitam */
 }
 
 /* Gaya untuk footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff; /* Background container putih */
+    color: #000; /* Warna font hitam */
     padding: 1rem;
     border-radius: 0 0 10px 10px;
+    border: 1px solid #000; /* Border hitam */
 }
 
 footer nav ul {
@@ -71,7 +77,7 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-    color: #fff;
+    color: #000; /* Warna font hitam */
     text-decoration: none;
 }
 
