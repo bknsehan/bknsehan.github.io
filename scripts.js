@@ -1,3 +1,5 @@
+// scripts.js
+
 document.addEventListener('DOMContentLoaded', function () {
     // Dark mode toggle
     const darkModeToggle = document.getElementById('dark-mode-toggle');
@@ -20,4 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollBottomButton.addEventListener('click', () => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     });
+
+    // Go to settings page
+    const settingsBtn = document.getElementById('settings-btn');
+    settingsBtn.addEventListener('click', goToSettingsPage);
+
+    // Fungsi untuk mengarahkan pengguna ke halaman pengaturan
+    function goToSettingsPage() {
+        window.location.href = 'settings.html';
+    }
 });

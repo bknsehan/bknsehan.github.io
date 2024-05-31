@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Web Layout</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <!-- Tambahkan Font Awesome CSS -->
@@ -18,28 +18,22 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <!-- Tambahkan link kembali ke halaman utama -->
+                    <li><a href="index.html">Back to Home</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Isi Konten -->
+        <!-- Isi Konten Pengaturan -->
         <main class="isi-konten">
-            <h1>Welcome to My Website</h1>
-            <p>This is the main content area. Add your content here.</p>
-        </main>
-
-        <!-- Menu Bawah -->
-        <footer class="menu-bawah">
-            <!-- Tambahkan Switch untuk Dark Mode -->
-            <label for="dark-mode-toggle" class="dark-mode-label">
+            <h1>Settings</h1>
+            <section>
+                <h2>Theme Settings</h2>
+                <label for="dark-mode-toggle">Dark Mode:</label>
                 <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
-                <i class="fas fa-adjust"></i> <!-- Icon dark mode -->
-            </label>
-            <button id="scroll-top" class="fas fa-arrow-up"></button>
-            <button id="scroll-bottom" class="fas fa-arrow-down"></button>
-            <!-- Tambahkan Tombol Pengaturan -->
-            <button id="settings-btn" class="fas fa-cog"></button>
-        </footer>
+            </section>
+            <!-- Tambahkan pengaturan lain sesuai kebutuhan -->
+        </main>
     </div>
 
     <script src="scripts.js"></script>
