@@ -82,6 +82,7 @@ body {
 body.dark-mode {
     background-color: #333;
     color: #f0f0f0;
+    border-color: white;
 }
 
 body.dark-mode .menu-atas,
@@ -90,14 +91,17 @@ body.dark-mode .menu-bawah {
     background-color: #555;
     color: #f0f0f0;
     border: none;
+    border-color: white;
 }
 
 body.dark-mode .menu-atas nav ul li a,
 body.dark-mode .menu-bawah button {
     color: #f0f0f0;
+    border-color: white;
 }
 
 body.dark-mode .menu-atas nav ul li a:hover,
 body.dark-mode .menu-bawah button:hover {
     color: #fff;
+    border-color: white;
 }
