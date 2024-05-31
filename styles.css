@@ -13,10 +13,20 @@ body {
     min-height: 100vh;
 }
 
+/* Common Container Styles */
+.menu-atas, .isi-konten, .menu-bawah {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Menu Atas */
 .menu-atas {
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 0;
 }
 
@@ -33,7 +43,7 @@ body {
 }
 
 .menu-atas nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
@@ -46,13 +56,14 @@ body {
 .isi-konten {
     flex: 1;
     padding: 20px;
-    background-color: #fff;
+    background-color: white;
+    color: black;
 }
 
 /* Menu Bawah */
 .menu-bawah {
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     padding: 10px 0;
 }
@@ -65,6 +76,7 @@ body {
     margin: 5px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 .menu-bawah button:hover {
@@ -78,8 +90,10 @@ body.dark-mode {
 }
 
 body.dark-mode .menu-atas,
+body.dark-mode .isi-konten,
 body.dark-mode .menu-bawah {
     background-color: #555;
+    color: #f0f0f0;
 }
 
 body.dark-mode .menu-atas nav ul li a,
