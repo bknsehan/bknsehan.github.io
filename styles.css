@@ -109,6 +109,10 @@ body.dark-mode .menu-bawah button:hover {
     .menu-atas,
     .menu-bawah {
         width: 60%;
-        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto; 
+        margin-right: auto; 
+    
     }
 }
