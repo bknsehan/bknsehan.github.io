@@ -103,13 +103,12 @@ body.dark-mode .menu-bawah button:hover {
     border-color: white;
 }
 
-media screen and (min-width: 768px) {
-    .container {
-        max-width: 800px;
+/*Desktop*/
+@media only screen and (min-width: 768px) {
+    .isi-konten,
+    .menu-atas,
+    .menu-bawah {
+        width: 60%;
         margin: 0 auto;
-    }
-
-    .menu-atas, .isi-konten, .menu-bawah {
-        padding: 20px;
     }
 }
