@@ -17,8 +17,8 @@ header {
     color: #000; /* Warna font hitam */
     padding: 1rem;
     border-radius: 10px;
-    border: 1px solid #000; /* Border hitam */
-    margin-bottom: 10px; /* Jarak antara container */
+    border: 2px solid #000; /* Border hitam dengan ketebalan ditingkatkan */
+    margin-bottom: 20px; /* Jarak antara container ditingkatkan */
 }
 
 header nav ul {
@@ -54,8 +54,8 @@ main section {
     border-radius: 10px;
     text-align: center;
     width: 80%;
-    border: 1px solid #000; /* Border hitam */
-    margin-bottom: 10px; /* Jarak antara container */
+    border: 2px solid #000; /* Border hitam dengan ketebalan ditingkatkan */
+    margin-bottom: 20px; /* Jarak antara container ditingkatkan */
 }
 
 /* Gaya untuk footer (menu bawah) */
@@ -64,11 +64,7 @@ footer {
     color: #000; /* Warna font hitam */
     padding: 1rem;
     border-radius: 10px;
-    border: 1px solid #000; /* Border hitam */
-    margin-bottom: 10px; /* Jarak antara container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 2px solid #000; /* Border hitam dengan ketebalan ditingkatkan */
 }
 
 footer nav ul {
@@ -123,35 +119,5 @@ footer nav ul li a {
         margin-bottom: 0; /* Menghilangkan jarak antara container pada tampilan mobile */
         width: 100%;
         border-radius: 0; /* Menghilangkan pembulatan sudut pada tampilan mobile */
-    }
-}
-
-/* Gaya khusus untuk tampilan PC */
-@media (min-width: 769px) {
-    body {
-        flex-direction: row;
-    }
-
-    main {
-        flex: 1;
-        order: 2; /* Menyusun ulang posisi main setelah footer pada tampilan PC */
-    }
-
-    footer {
-        flex-direction: column;
-        width: 200px;
-        height: 100%;
-        order: 1; /* Menyusun ulang posisi footer sebelum main pada tampilan PC */
-        margin-right: 10px; /* Jarak antara container */
-        margin-bottom: 0;
-    }
-
-    footer nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    footer nav ul li {
-        margin: 10px 0;
     }
 }
