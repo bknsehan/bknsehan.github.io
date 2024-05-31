@@ -1,60 +1,93 @@
+/* Global Styles */
 body {
-    margin: 0;
-    padding: 10px;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 .container {
     display: flex;
-    border: 1px solid black;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.sidebar {
-    width: 200px;
-    background-color: #ccc;
-    border-right: 1px solid black;
-    border-radius: 10px 0 0 10px;
-    padding: 10px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.main-content {
-    flex: 1;
-    display: flex;
     flex-direction: column;
-    border-left: 1px solid black;
-    border-radius: 0 10px 10px 0;
+    min-height: 100vh;
 }
 
-.topbar {
-    background-color: #bbb;
-    border-bottom: 1px solid black;
-    padding: 10px;
+/* Menu Atas */
+.menu-atas {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
-.topbar ul {
+.menu-atas nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    justify-content: center;
 }
 
-.content {
+.menu-atas nav ul li {
+    margin: 0 15px;
+}
+
+.menu-atas nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-atas nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Isi Konten */
+.isi-konten {
+    flex: 1;
     padding: 20px;
+    background-color: #fff;
 }
 
-.content p {
-    margin: 0;
+/* Menu Bawah */
+.menu-bawah {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-bawah button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-bawah button:hover {
+    background-color: #777;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode .menu-atas,
+body.dark-mode .menu-bawah {
+    background-color: #555;
+}
+
+body.dark-mode .menu-atas nav ul li a,
+body.dark-mode .menu-bawah button {
+    color: #f0f0f0;
+}
+
+body.dark-mode .menu-atas nav ul li a:hover,
+body.dark-mode .menu-bawah button:hover {
+    color: #fff;
 }

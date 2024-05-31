@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Layout</title>
+    <title>Basic Web Layout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <ul>
-                <li>Menu 1</li>
-                <li>Menu 2</li>
-                <li>Menu 3</li>
-            </ul>
-        </div>
-        <div class="main-content">
-            <div class="topbar">
+        <!-- Menu Atas -->
+        <header class="menu-atas">
+            <nav>
                 <ul>
-                    <li>Top Menu 1</li>
-                    <li>Top Menu 2</li>
-                    <li>Top Menu 3</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-            <div class="content">
-                <p>Ini adalah konten utama.</p>
-            </div>
-        </div>
+            </nav>
+        </header>
+
+        <!-- Isi Konten -->
+        <main class="isi-konten">
+            <h1>Welcome to My Website</h1>
+            <p>This is the main content area. Add your content here.</p>
+        </main>
+
+        <!-- Menu Bawah -->
+        <footer class="menu-bawah">
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+            <button id="scroll-top">Scroll to Top</button>
+            <button id="scroll-bottom">Scroll to Bottom</button>
+        </footer>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
