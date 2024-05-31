@@ -22,17 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollBottomButton.addEventListener('click', () => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     });
-
-    // Go to settings page
-    const settingsBtn = document.getElementById('settings-btn');
-    settingsBtn.addEventListener('click', goToSettingsPage);
-
-    // Fungsi untuk mengarahkan pengguna ke halaman pengaturan
-    function goToSettingsPage() {
-        window.location.href = 'settings.html';
-    }
+    
 });
 
 document.getElementById('settings-btn').addEventListener('click', function() {
     document.getElementById('settings-popup').style.display = 'block';
+});
+
+document.getElementById('close-settings-btn').addEventListener('click', function() {
+    document.getElementById('settings-popup').style.display = 'none';
 });
