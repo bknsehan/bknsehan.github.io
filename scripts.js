@@ -32,3 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'settings.html';
     }
 });
+
+document.getElementById('settings-btn').addEventListener('click', function() {
+    document.getElementById('settings-popup').style.display = 'block';
+});
