@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Web Layout</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <!-- Tambahkan Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -29,7 +30,11 @@
 
         <!-- Menu Bawah -->
         <footer class="menu-bawah">
-            <button id="dark-mode-toggle" class="fas fa-adjust"></button>
+            <!-- Tambahkan Switch untuk Dark Mode -->
+            <label for="dark-mode-toggle" class="dark-mode-label">
+                <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+                <i class="fas fa-adjust"></i> <!-- Icon dark mode -->
+            </label>
             <button id="scroll-top" class="fas fa-arrow-up"></button>
             <button id="scroll-bottom" class="fas fa-arrow-down"></button>
         </footer>

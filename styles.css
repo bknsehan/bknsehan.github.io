@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* Common Container Styles */
 .menu-atas, .isi-konten, .menu-bawah {
     background-color: white;
     color: black;
@@ -112,7 +111,6 @@ body.dark-mode .menu-bawah button:hover {
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: auto; 
-        margin-right: auto; 
-    
+        margin-right: auto;
     }
 }
