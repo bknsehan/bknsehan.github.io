@@ -91,7 +91,7 @@ body.dark-mode {
 body.dark-mode .menu-atas,
 body.dark-mode .isi-konten,
 body.dark-mode .menu-bawah,.Pengaturan {
-    background-color: black;
+    background-color: ;
     color: white;
     border-color: white;
 }
