@@ -63,7 +63,7 @@ body {
 }
 
 .menu-bawah button {
-    background-color: #555;
+    background-color: black;
     color: white;
     padding: 10px 20px;
     margin: 5px;
@@ -74,7 +74,7 @@ body {
 }
 
 .menu-bawah button:hover {
-    background-color: #777;
+    background-color: black;
 }
 
 /* Dark Mode */
@@ -93,13 +93,13 @@ body.dark-mode .menu-bawah {
 
 body.dark-mode .menu-atas nav ul li a,
 body.dark-mode .menu-bawah button {
-    color: #f0f0f0;
+    color: white;
     border-color: white;
 }
 
 body.dark-mode .menu-atas nav ul li a:hover,
 body.dark-mode .menu-bawah button:hover {
-    color: #fff;
+    color: white;
     border-color: white;
 }
 
