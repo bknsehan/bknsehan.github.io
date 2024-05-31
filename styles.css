@@ -89,7 +89,7 @@ body.dark-mode .isi-konten,
 body.dark-mode .menu-bawah {
     background-color: #555;
     color: #f0f0f0;
-    border: 2px solid white;
+    border: none;
 }
 
 body.dark-mode .menu-atas nav ul li a,
