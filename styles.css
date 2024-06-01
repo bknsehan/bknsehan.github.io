@@ -32,4 +32,13 @@ h1 {
     border-radius: 5px;
     margin: 5px;
     cursor: pointer;
+    border: 1px solid #000; /* Menambahkan border hitam */
+}
+
+.tag.selected { /* Kelas baru untuk tag yang dipilih */
+    background-color: #007bff; /* Biru untuk tag yang diinclude */
+}
+
+.tag.selected.excluded { /* Kelas baru untuk tag yang diexclude */
+    background-color: #dc3545; /* Merah untuk tag yang diexclude */
 }
