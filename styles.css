@@ -139,6 +139,17 @@ body.dark-mode .menu-bawah button:hover {
     font-size: 24px;
 }
 
+.dark-mode-label-popup {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#dark-mode-toggle-popup {
+    margin-right: 10px;
+}
+
+
 /*Desktop*/
 @media only screen and (min-width: 768px) {
     .isi-konten,
