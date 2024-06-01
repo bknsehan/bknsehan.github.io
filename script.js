@@ -9,7 +9,7 @@ function createTagElement(tagName) {
     tagElement.classList.add("tag");
     tagElement.textContent = tagName;
     tagElement.addEventListener("click", function() {
-        search(tagName);
+        // Hapus alert
     });
     return tagElement;
 }
@@ -21,12 +21,6 @@ function renderTags() {
         const tagElement = createTagElement(tag);
         tagContainer.appendChild(tagElement);
     });
-}
-
-// Fungsi untuk melakukan pencarian
-function search(query) {
-    // Di sini Anda dapat menambahkan logika untuk melakukan pencarian
-    alert("Anda mencari: " + query);
 }
 
 // Panggil fungsi untuk merender tag saat halaman dimuat
