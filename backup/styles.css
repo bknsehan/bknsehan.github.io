@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu-atas, .isi-konten, .menu-bawah, .Pengaturan {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid black;
+}
+
+/* Menu Atas */
+.menu-atas {
+    padding: 10px 0;
+}
+
+.menu-atas nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-atas nav ul li {
+    margin: 0 15px;
+}
+
+.menu-atas nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-atas nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Isi Konten */
+.isi-konten {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Pengaturan */
+.Pengaturan {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Menu Bawah */
+.menu-bawah {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-bawah button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: none; /* Menghilangkan shadow box */
+}
+
+.menu-bawah button:hover {
+    background-color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .menu-atas,
+body.dark-mode .isi-konten,
+body.dark-mode .menu-bawah, .settings-content {    
+    background-color: black ;
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode .menu-atas nav ul li a,
+body.dark-mode .menu-bawah button {
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode .menu-atas nav ul li a:hover,
+body.dark-mode .menu-bawah button:hover {
+    color: white;
+    border-color: white;
+}
+
+.settings-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparan agar popup menonaktifkan latar belakang */
+    z-index: 9999; /* Pastikan popup muncul di atas semua elemen lain */
+}
+
+.settings-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-color: black;
+    border: 4px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dark-mode-label-popup {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#dark-mode-toggle-popup {
+    margin-right: 10px;
+}
+
+
+/*Desktop*/
+@media only screen and (min-width: 768px) {
+    .isi-konten,
+    .menu-atas,
+    .menu-bawah {
+        width: 60%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}
