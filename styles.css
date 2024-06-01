@@ -90,8 +90,8 @@ body.dark-mode {
 
 body.dark-mode .menu-atas,
 body.dark-mode .isi-konten,
-body.dark-mode .menu-bawah, .Pengaturan {    
-    background-color: white ;
+body.dark-mode .menu-bawah {    
+    background-color: black ;
     color: white;
     border-color: white;
 }
