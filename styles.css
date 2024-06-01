@@ -27,6 +27,6 @@ body {
 /* Media query untuk perangkat mobile */
 @media screen and (max-width: 768px) {
     .search-bar {
-        margin-top: 20px; /* Naikkan posisi search bar */
+        height: 20px;
     }
 }
