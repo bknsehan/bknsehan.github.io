@@ -9,7 +9,8 @@ body {
 }
 
 .container {
-    position: relative;
+    position: absolute;
+    top: 40%;
 }
 
 .search-bar {
@@ -45,6 +46,8 @@ body {
 }
 
 .alert {
+    position: absolute;
+    top : 32%;
     display: none;
     color: white;
     background-color: red;
