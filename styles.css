@@ -1,44 +1,44 @@
-body {
-    font-family: sans-serif;
-}
-
 .container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h1 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-#search-bar {
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.tags-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .tag {
-    background-color: #eee;
     padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px;
+    margin: 0 5px;
     cursor: pointer;
-    border: 1px solid #000; /* Menambahkan border hitam */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.tag.selected { /* Kelas baru untuk tag yang dipilih */
-    background-color: #007bff; /* Biru untuk tag yang diinclude */
+.tag.selected {
+    background-color: blue;
+    color: white;
 }
 
-.tag.selected.excluded { /* Kelas baru untuk tag yang diexclude */
-    background-color: #dc3545; /* Merah untuk tag yang diexclude */
+.tag.excluded {
+    background-color: red;
+    color: white;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
 }

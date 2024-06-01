@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Bar</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Page</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Pencarian Tag</h1>
-        <input type="text" id="search-bar" placeholder="Masukkan kata kunci">
-        <div class="tags-container">
-            </div>
+<div class="container">
+    <div class="menu">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <div id="tags">
+            <span class="tag" data-state="unselected">Tag 1</span>
+            <span class="tag" data-state="unselected">Tag 2</span>
+            <span class="tag" data-state="unselected">Tag 3</span>
+            <span class="tag" data-state="unselected">Tag 4</span>
+        </div>
     </div>
-
-    <script src="scripts.js"></script>
+    <div class="content">
+        <!-- Content Goes Here -->
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
