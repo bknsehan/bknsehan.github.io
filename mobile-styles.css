@@ -1,0 +1,32 @@
+/* Untuk Tampilan Mobile */
+
+@media only screen and (max-width: 600px) {
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .container {
+        position: static;
+        top: auto;
+        transform: translateY(0%);
+        margin-top: 20px;
+    }
+
+    .search-bar {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .tag {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .alert {
+        position: static;
+        top: auto;
+        transform: translateY(0%);
+        margin-bottom: 10px;
+    }
+}
