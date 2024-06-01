@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollBottomButton.addEventListener('click', () => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     });
-    
+
 });
 
 document.getElementById('settings-btn').addEventListener('click', function() {

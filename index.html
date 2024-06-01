@@ -31,10 +31,6 @@
         <!-- Menu Bawah -->
         <footer class="menu-bawah">
             <!-- Tambahkan Switch untuk Dark Mode -->
-            <label for="dark-mode-toggle" class="dark-mode-label">
-                <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
-                <i class="fas fa-adjust"></i> <!-- Icon dark mode -->
-            </label>
             <button id="scroll-top" class="fas fa-arrow-up"></button>
             <button id="scroll-bottom" class="fas fa-arrow-down"></button>
             <!-- Tambahkan Tombol Pengaturan -->
@@ -47,7 +43,11 @@
             <!-- Isi dari popup pengaturan -->
             <h2>Settings</h2>
             <!-- Konten pengaturan lainnya -->
-            <button id="close-settings-btn">Close</button>
+            <label for="dark-mode-toggle" class="dark-mode-label">
+                <input type="checkbox" id="dark-mode-toggle" class="dark-mode-toggle">
+                <i class="fas fa-adjust"></i> <!-- Icon dark mode -->
+            </label>
+            <i id="close-settings-btn" class="fas fa-times close-icon"></i>
         </div>
     </div>
 
