@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    // Dark mode toggle
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const darkModeTogglePopup = document.getElementById('dark-mode-toggle-popup');
 
@@ -11,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         disableDarkMode();
     }
 
-    // Simpan pengaturan ketika pengguna mengubahnya
-    darkModeToggle.addEventListener('change', function() {
+    // Simpan pengaturan ketika pengguna mengubahnya dari menu bawah
+    darkModeToggle.addEventListener('change', function () {
         if (darkModeToggle.checked) {
             enableDarkMode();
             localStorage.setItem('darkMode', 'enabled');
@@ -22,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    darkModeTogglePopup.addEventListener('change', function() {
+    // Simpan pengaturan ketika pengguna mengubahnya dari popup pengaturan
+    darkModeTogglePopup.addEventListener('change', function () {
         if (darkModeTogglePopup.checked) {
             enableDarkMode();
             localStorage.setItem('darkMode', 'enabled');
@@ -34,10 +36,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Scroll to top
+    const scrollTopButton = document.getElementById('scroll-top');
+    scrollTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Scroll to bottom
+    const scrollBottomButton = document.getElementById('scroll-bottom');
+    scrollBottomButton.addEventListener('click', () => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
+
+    // Tampilkan popup pengaturan
     document.getElementById('settings-btn').addEventListener('click', function() {
         document.getElementById('settings-popup').style.display = 'block';
     });
 
+    // Tutup popup pengaturan
     document.getElementById('close-settings-btn').addEventListener('click', function() {
         document.getElementById('settings-popup').style.display = 'none';
     });
