@@ -104,3 +104,21 @@ body {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+.theme {
+}
+
+#showtheme {
+    bottom: 7%;
+    right: 3%;
+    position: absolute;
+    background-color: black;
+    border-color: white;
+    color: white;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;   
+}
