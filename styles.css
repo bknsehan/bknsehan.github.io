@@ -13,6 +13,14 @@ body {
     top: 40%;
 }
 
+.bungkus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 .search-bar {
     width: 300px;
     height: 40px;
@@ -26,19 +34,57 @@ body {
     margin-bottom: 20px;
 }
 
+
+#tagToggleButton {
+    margin-bottom: 20px;
+    margin-left: 0.6em;
+}
+
+#tagBoxContainer {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+.tag-button {
+    background-color: black;
+    border-color: white;
+    color: white;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 .tag-box {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px white solid;
+}
+
+.tag-box.show {
+    display: flex;
 }
 
 .tag {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: black;
     color: white;
     padding: 5px 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 5px;
     border-radius: 5px;
+    border: 2px white solid;
     cursor: pointer;
+    flex: 1 1 12%; /* Adjust width to make 4 columns */
+    text-align: center;
 }
 
 .tag.selected {
@@ -46,8 +92,11 @@ body {
 }
 
 .alert {
+    text-align: center;
+    justify-content: center;
+    width: 22.5em;
     position: absolute;
-    top : 32%;
+    top: 30%;
     display: none;
     color: white;
     background-color: red;
