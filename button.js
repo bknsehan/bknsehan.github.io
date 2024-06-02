@@ -6,3 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
         tagBox.classList.toggle('show');
     });
 });
+
+function toggleThemeOptionsWindow() {
+    var themeOptionsWindow = document.getElementById('themeOptionsWindow');
+    if (themeOptionsWindow.style.display === 'none') {
+        themeOptionsWindow.style.display = 'block';
+    } else {
+        themeOptionsWindow.style.display = 'none';
+    }
+}

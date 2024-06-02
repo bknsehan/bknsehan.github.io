@@ -67,7 +67,7 @@ body {
     margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px white solid;
 }
 
@@ -80,10 +80,10 @@ body {
     color: white;
     padding: 5px 10px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px white solid;
     cursor: pointer;
-    flex: 1 1 12%; /* Adjust width to make 4 columns */
+    flex: 1 1 12; /* Adjust width to make 4 columns */
     text-align: center;
 }
 
@@ -121,4 +121,27 @@ body {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;   
+}
+
+#themeOptionsWindow {
+    text-align: center;
+    width: 5%;
+    height: 40%;
+    display: none;
+    position: absolute;
+    bottom: 5%; /* Atur sesuai dengan posisi yang diinginkan */
+    right: 2%;
+    padding: 10px;
+
+}
+
+.theme-option {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    margin: 15px 10px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
