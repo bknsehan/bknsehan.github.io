@@ -32,14 +32,15 @@
         </div>
     </div>
     <div id="themeOptionsWindow" class="theme-options-window" style="display: none;">
-        <button class="theme-option" data-theme="dark"><i class="fa-solid fa-lightbulb"></i></button>
-        <button class="theme-option" data-theme="light"><i class="fa-regular fa-lightbulb"></i></button>
-        <button class="theme-option" data-theme="frieren"><i class="fa-solid fa-f"></i></button>          
+        <button class="theme-option"  onclick="changeTheme('dark')"> <i class="fa-solid fa-moon"></i></button>
+        <button class="theme-option"  onclick="changeTheme('light')"> <i class="fa-solid fa-sun"></i></button>
+        <button class="theme-option"  onclick="changeTheme('frieren')">:v</button>          
     </div>  
     <div id="theme" class="theme-select">
         <button id="showtheme" onclick="toggleThemeOptionsWindow()"><i class="fa-solid fa-brush"></i></button>      
     </div>
     <script src="button.js"></script>
+    <script src="themes/themes.js"></script>
     <script src="alert.js"></script>
     <script src="script.js"></script>
 </body>

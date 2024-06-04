@@ -120,14 +120,15 @@ text-align: center ;
     border-radius: 30px;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;   
 }
 
 #themeOptionsWindow {
     width: 5%;
-    display: none;
+    display: none flex;
     position: absolute;
+    align-items: center;
     bottom: 15%; /* Atur sesuai dengan posisi yang diinginkan */
     right: 24.5px;
 
@@ -135,7 +136,7 @@ text-align: center ;
 }
 
 .theme-option {
-    width: 70%;
+    width: 45px;
     position: relative;
     background-color: black;
     color: white;
@@ -143,6 +144,6 @@ text-align: center ;
     border-radius: 16px;
     text-align: center;
     margin-bottom: 15%;
-    padding: 15px;
-    font-weight: 16px;
+    padding: 10px;
+    font-size: 15px;
 }
