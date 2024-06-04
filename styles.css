@@ -109,6 +109,7 @@ body {
 }
 
 #showtheme {
+text-align: center ;
     bottom: 7%;
     right: 3%;
     position: absolute;
@@ -124,24 +125,24 @@ body {
 }
 
 #themeOptionsWindow {
-    text-align: center;
     width: 5%;
-    height: 40%;
     display: none;
     position: absolute;
-    bottom: 5%; /* Atur sesuai dengan posisi yang diinginkan */
-    right: 2%;
-    padding: 10px;
+    bottom: 15%; /* Atur sesuai dengan posisi yang diinginkan */
+    right: 24.5px;
+
 
 }
 
 .theme-option {
+    width: 70%;
+    position: relative;
     background-color: black;
     color: white;
     border: 2px solid white;
-    border-radius: 30px;
+    border-radius: 16px;
     text-align: center;
-    margin: 15px 10px;
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 15%;
+    padding: 15px;
+    font-weight: 16px;
 }
