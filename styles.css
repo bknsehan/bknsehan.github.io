@@ -132,7 +132,7 @@ text-align: center ;
     display: none flex;
     position: absolute;
     align-items: center;
-    bottom: 15%; /* Atur sesuai dengan posisi yang diinginkan */
+    bottom: 15%;
     right: 24.5px;
 
 
@@ -149,4 +149,5 @@ text-align: center ;
     margin-bottom: 15%;
     padding: 10px;
     font-size: 15px;
+    cursor: pointer;
 }
