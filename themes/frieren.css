@@ -1,0 +1,18 @@
+body.frieren .tag-button ,
+body.frieren .tag ,
+body.frieren #showtheme ,
+body.frieren .container ,
+body.frieren .theme-option {
+    background-color: skyblue;
+    color :black ;
+    border-color: green;
+}
+
+body.frieren {
+    background-color: skyblue;
+}
+
+body.frieren .search-bar {
+border-color: green;
+color: black;
+}

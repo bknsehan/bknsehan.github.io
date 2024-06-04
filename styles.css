@@ -30,6 +30,8 @@ body {
     background-color: transparent;
     color: white;
     font-size: 16px;
+    font-family: Comfortaa;
+    font-weight: bolder;
     outline: none;
     margin-bottom: 20px;
 }
@@ -67,7 +69,7 @@ body {
     margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 12px;
     border: 2px white solid;
 }
 
@@ -85,6 +87,7 @@ body {
     cursor: pointer;
     flex: 1 1 12; /* Adjust width to make 4 columns */
     text-align: center;
+    font-family: Comfortaa;
 }
 
 .tag.selected {
