@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleThemeOptionsWindow() {
     var themeOptionsWindow = document.getElementById('themeOptionsWindow');
     if (themeOptionsWindow.style.display === 'none') {
-        themeOptionsWindow.style.display = 'block';
+        themeOptionsWindow.style.display = 'flex';
     } else {
         themeOptionsWindow.style.display = 'none';
     }

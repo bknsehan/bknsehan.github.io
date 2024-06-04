@@ -128,14 +128,11 @@ text-align: center ;
 }
 
 #themeOptionsWindow {
-    width: 5%;
-    display: none flex;
+    flex-direction: column;
     position: absolute;
     align-items: center;
     bottom: 15%;
-    right: 24.5px;
-
-
+    right: 3.5%;
 }
 
 .theme-option {
