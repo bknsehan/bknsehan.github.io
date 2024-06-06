@@ -188,7 +188,6 @@ text-align: center ;
     }
     
     .tag {
-        width: 180px;
         padding: 5px 10px;
         margin: 5px;
         flex: 1 1 12; /* Adjust width to make 4 columns */
