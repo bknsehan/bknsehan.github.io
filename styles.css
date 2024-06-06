@@ -159,4 +159,40 @@ text-align: center ;
         align-items: center;
     }
 
+    .container {
+        position: absolute;
+        top: 30%;
+    }
+    
+    .bungkus{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .search-bar {
+        width: 150px;
+        height: 40px;
+    }
+    
+    
+    #tagBoxContainer {
+        width: 200px;
+        position: fixed;
+        bottom: 10%;
+        right: 10%;
+        text-align: center;
+    }
+    
+    .tag {
+        width: 200px;
+        padding: 5px 10px;
+        margin: 5px;
+        flex: 1 1 12; /* Adjust width to make 4 columns */
+    }
+    
+
 }
+
