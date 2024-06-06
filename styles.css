@@ -91,7 +91,8 @@ body {
 }
 
 .tag.selected {
-    background-color: green;
+    border-color: limegreen;
+    color: limegreen;
 }
 
 .alert {
@@ -200,7 +201,7 @@ text-align: center ;
         justify-content: center;
         width: 21em;
         position: absolute;
-        top: 15%;
+        top: 20%;
         display: none;
         color: white;
         background-color: red;

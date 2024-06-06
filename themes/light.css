@@ -19,5 +19,6 @@ color: black;
 }
 
 body.light .tag.selected {
-    background-color: green;
+    color: green;
+    border-color: green;
 }
