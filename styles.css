@@ -195,6 +195,19 @@ text-align: center ;
         flex: 1 1 12; /* Adjust width to make 4 columns */
     }
     
+    .alert {
+        text-align: center;
+        justify-content: center;
+        width: 21em;
+        position: absolute;
+        top: 15%;
+        display: none;
+        color: white;
+        background-color: red;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
 
 }
 
