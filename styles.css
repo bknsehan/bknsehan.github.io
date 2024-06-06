@@ -173,13 +173,12 @@ text-align: center ;
     }
     
     .search-bar {
-        width: 150px;
+        width: 170px;
         height: 40px;
     }
     
     
     #tagBoxContainer {
-        width: 200px;
         position: fixed;
         bottom: 10%;
         right: 10%;
@@ -187,7 +186,7 @@ text-align: center ;
     }
     
     .tag {
-        width: 200px;
+        width: 180px;
         padding: 5px 10px;
         margin: 5px;
         flex: 1 1 12; /* Adjust width to make 4 columns */
