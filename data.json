@@ -1,0 +1,14 @@
+[
+  {
+    "CODE": "google",
+    "ACTIVITY": "https://www.google.com"
+  },
+  {
+    "CODE": "facebook",
+    "ACTIVITY": "https://www.facebook.com"
+  },
+  {
+    "CODE": "twitter",
+    "ACTIVITY": "https://www.twitter.com"
+  }
+]

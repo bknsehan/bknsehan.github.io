@@ -1,17 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const tags = document.querySelectorAll(".tag");
-    const alertBox = document.getElementById("alertBox");
+// Fungsi untuk menampilkan notifikasi
+function showAlert(message, type) {
+  const alertBox = document.getElementById("alertBox");
 
-    tags.forEach(tag => {
-        tag.addEventListener("click", function() {
-            const selectedTags = document.querySelectorAll(".selected");
-            if (selectedTags.length >= 2 && !tag.classList.contains("selected")) {
-                alertBox.innerText = "Anda hanya dapat memilih maksimal 2 tag!";
-                alertBox.style.display = "block";
-                setTimeout(() => {
-                    alertBox.style.display = "none";
-                }, 3000);
-            }
-        });
-    });
-});
+  // Menentukan warna berdasarkan tipe notifikasi
+  let backgroundColor;
+  switch (type) {
+    case "info":
+      backgroundColor = "blue";
+      break;
+    case "error":
+      backgroundColor = "red";
+      break;
+    case "success":
+      backgroundColor = "green";
+      break;
+    default:
+      backgroundColor = "gray";
+  }
+
+  // Menampilkan pesan
+  alertBox.textContent = message;
+  alertBox.style.backgroundColor = backgroundColor;
+  alertBox.style.color = "white";
+  alertBox.style.display = "block";
+
+  // Menghilangkan notifikasi setelah 3 detik
+  setTimeout(() => {
+    alertBox.style.display = "none";
+  }, 3000);
+}
