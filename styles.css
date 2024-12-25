@@ -5,7 +5,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .container {
@@ -13,7 +12,7 @@ body {
     top: 40%;
 }
 
-.bungkus{
+.bungkus {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,65 +35,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-#tagToggleButton {
-    margin-bottom: 20px;
-    margin-left: 0.6em;
-}
-
-#tagBoxContainer {
-    position: fixed;
-    bottom: 10%;
-    right: 10%;
-    text-align: center;
-}
-
-.tag-button {
-    background-color: black;
-    border-color: white;
-    color: white;
-    border: 2px solid;
-    border-radius: 30px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.tag-box {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 12px;
-    border: 2px white solid;
-}
-
-.tag-box.show {
-    display: flex;
-}
-
-.tag {
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 10px;
-    border: 2px white solid;
-    cursor: pointer;
-    flex: 1 1 12; /* Adjust width to make 4 columns */
-    text-align: center;
-    font-family: Comfortaa;
-}
-
-.tag.selected {
-    border-color: limegreen;
-    color: limegreen;
-}
-
 .alert {
     text-align: center;
     justify-content: center;
@@ -113,7 +53,7 @@ body {
 }
 
 #showtheme {
-text-align: center ;
+    text-align: center;
     bottom: 7%;
     right: 3%;
     position: sticky;
@@ -126,7 +66,7 @@ text-align: center ;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 #themeOptionsWindow {
@@ -166,36 +106,21 @@ text-align: center ;
         position: absolute;
         top: 30%;
     }
-    
-    .bungkus{
+
+    .bungkus {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
     }
-    
+
     .search-bar {
+        max-width: 70%;
         width: 170px;
         height: 40px;
     }
-    
-    
-    #tagBoxContainer {
-        max-width: 90%;
-        position: fixed;
-        bottom: 10%;
-        right: 10%;
-        left: 10%;
-        text-align: center;
-    }
-    
-    .tag {
-        padding: 5px 10px;
-        margin: 5px;
-        flex: 1 1 12; /* Adjust width to make 4 columns */
-    }
-    
+
     .alert {
         text-align: center;
         justify-content: center;
@@ -209,6 +134,4 @@ text-align: center ;
         border-radius: 5px;
         margin-bottom: 10px;
     }
-
 }
-

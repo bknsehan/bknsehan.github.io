@@ -1,51 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Bar</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Theme -->
-    <link rel="stylesheet" href="themes/light.css">
-    <link rel="stylesheet" href="themes/frieren.css">
-    <!-- Font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/fonts/fonts.css">
-</head>
-<body>
-    <div id="alertBox" class="alert"></div>
-    <div class="container">
-        <div class="bungkus">
-            <input type="text" id="searchBar" class="search-bar" placeholder=":v">
-            <button id="tagToggleButton" class="tag-button">#</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search Bar</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Theme -->
+        <link rel="stylesheet" href="themes/light.css" />
+        <link rel="stylesheet" href="themes/frieren.css" />
+        <!-- Font -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    </head>
+    <body>
+        <div id="alertBox" class="alert"></div>
+        <div class="container">
+            <div class="bungkus">
+                <input
+                    type="text"
+                    id="searchBar"
+                    class="search-bar"
+                    placeholder=":v"
+                />
+            </div>
         </div>
-        <div id="tagBox" class="tag-box">
-            <div class="tag" data-tag="Tag 1">Tag 1</div>
-            <div class="tag" data-tag="Tag 2">Tag 2</div>
-            <div class="tag" data-tag="Tag 3">Tag 3</div>
-            <div class="tag" data-tag="Tag 4">Tag 4</div>
-            <div class="tag" data-tag="Tag 5">Tag 5</div>
-            <div class="tag" data-tag="Tag 6">Tag 6</div>
-            <div class="tag" data-tag="Tag 7">Tag 7</div>
-            <div class="tag" data-tag="Tag 8">Tag 8</div>
-            <div class="tag" data-tag="Tag 9">Tag 9</div>
-            <div class="tag" data-tag="Tag 10">Tag 10</div>
-            <div class="tag" data-tag="Tag 11">Tag 11</div>
-            <div class="tag" data-tag="Tag 12">Tag 12</div>
-        </div>
-    </div>
-    <div id="themeOptionsWindow" class="theme-options-window" style="display: none;">
-        <!-- <button class="theme-option"  onclick="setTheme('dark')"> <i class="fa-solid fa-moon"></i></button>
+        <div
+            id="themeOptionsWindow"
+            class="theme-options-window"
+            style="display: none"
+        >
+            <!-- <button class="theme-option"  onclick="setTheme('dark')"> <i class="fa-solid fa-moon"></i></button>
         <button class="theme-option"  onclick="setTheme('light')"> <i class="fa-solid fa-sun"></i></button> -->
-        <button id="theme-toggle" class="theme-option" onclick="toggleTheme()"> <i class="fa-solid fa-lightbulb"></i></button>
-        <button class="theme-option"  onclick="setTheme('frieren')">:v</button>          
-    </div>  
-    <div id="theme" class="theme-select">
-        <button id="showtheme" onclick="toggleThemeOptionsWindow()"><i class="fa-solid fa-brush"></i></button>      
-    </div>
-    <script src="button.js"></script>
-    <script src="themes/themes.js"></script>
-    <script src="alert.js"></script>
-    <script src="script.js"></script>
-</body>
+            <button
+                id="theme-toggle"
+                class="theme-option"
+                onclick="toggleTheme()"
+            >
+                <i class="fa-solid fa-lightbulb"></i>
+            </button>
+            <button class="theme-option" onclick="setTheme('frieren')">
+                :v
+            </button>
+        </div>
+        <div id="theme" class="theme-select">
+            <button id="showtheme" onclick="toggleThemeOptionsWindow()">
+                <i class="fa-solid fa-brush"></i>
+            </button>
+        </div>
+        <script src="button.js"></script>
+        <script src="themes/themes.js"></script>
+        <script src="alert.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
